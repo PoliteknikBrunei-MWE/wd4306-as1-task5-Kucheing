@@ -11,11 +11,11 @@ export const routes: Routes = [
     path: 'auth',
     loadComponent: () => import('./auth/auth.page').then((m) => m.AuthPage),
   },
-  // {
-  //   path: 'places',
-  //   loadComponent: () =>
-  //     import('./places/places.page').then((m) => m.PlacesPage),
-  // },
+  {
+    path: 'places',
+    loadComponent: () =>
+      import('./places/places.page').then((m) => m.PlacesPage),
+  },
   // {
   //   path: 'place-detail',
   //   loadComponent: () =>
@@ -44,11 +44,11 @@ export const routes: Routes = [
       },
     ],
   },
-  {
-    path: 'places',
-    redirectTo: '/tabs/places',
-    pathMatch: 'full',
-  },
+  // {
+  //   path: 'places',
+  //   redirectTo: '/tabs/places',
+  //   pathMatch: 'full',
+  // },
   {
     path: 'tabs',
     loadComponent: () => import('./tabs/tabs.page').then((m) => m.TabsPage),
