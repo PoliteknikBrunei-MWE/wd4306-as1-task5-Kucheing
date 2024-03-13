@@ -11,18 +11,18 @@ export const routes: Routes = [
     path: 'auth',
     loadComponent: () => import('./auth/auth.page').then((m) => m.AuthPage),
   },
-  {
-    path: 'places',
-    loadComponent: () =>
-      import('./places/places.page').then((m) => m.PlacesPage),
-  },
   // {
-  //   path: 'place-detail',
+  //   path: 'places',
   //   loadComponent: () =>
-  //     import('./places/place-detail/place-detail.page').then(
-  //       (m) => m.PlaceDetailPage
-  //     ),
+  //     import('./places/places.page').then((m) => m.PlacesPage),
   // },
+  {
+    path: 'place-detail',
+    loadComponent: () =>
+      import('./places/place-detail/place-detail.page').then(
+        (m) => m.PlaceDetailPage
+      ),
+  },
   {
     path: 'offers',
     loadComponent: () =>
@@ -44,13 +44,18 @@ export const routes: Routes = [
       },
     ],
   },
-  // {
-  //   path: 'places',
-  //   redirectTo: '/tabs/places',
-  //   pathMatch: 'full',
-  // },
+  {
+    path: 'places',
+    redirectTo: '/tabs/places',
+    pathMatch: 'full',
+  },
   {
     path: 'tabs',
     loadComponent: () => import('./tabs/tabs.page').then((m) => m.TabsPage),
   },
+  {
+    path: 'place-detail',
+    loadComponent: () => import('./places/place-detail/place-detail.page').then( m => m.PlaceDetailPage)
+  },
 ];
+
