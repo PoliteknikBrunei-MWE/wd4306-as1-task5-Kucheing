@@ -28,26 +28,22 @@
       <ion-title size="large">Find Places</ion-title>
     </ion-toolbar> -->
   <!-- </ion-header> -->
-  <ion-content class="ion-padding">
-    <img src="../../assets/img/beach-sunset.jpg" alt="Description of the image">
-    <button class="clickable-box" href="">Brunei Muara</button>
-    <button class="clickable-box" href="">Tutong</button>
-    <button class="clickable-box" href="">Temburong</button>
-    <button class="clickable-box" href="">Kuala Belait</button>
+  <ion-card>
+    <ion-card-content
+      ><ion-img src="assets/img/beach-sunset.jpg" alt="Image"></ion-img>
+    </ion-card-content>
+  </ion-card>
+    <!-- <button class="clickable-box" (click)="navigateToPlaceDetail('brunei-muara')">Brunei Muara</button>
+    <button class="clickable-box" (click)="navigateToPlaceDetail('tutong')">Tutong</button>
+    <button class="clickable-box" (click)="navigateToPlaceDetail('temburong')">Temburong</button>
+    <button class="clickable-box" (click)="navigateToPlaceDetail('kuala-belait')">Kuala Belait</button> -->
+    
+    <ion-list>
+      <ion-item *ngFor="let place of places">
+        <ion-label>{{ place }}</ion-label>
+      </ion-item>
+    </ion-list>
+  
   </ion-content>
-</ion-content>
 </div>
-
-
-
-
-
-
-
-
-  
-  
-
-
-
 

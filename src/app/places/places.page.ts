@@ -11,10 +11,11 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class PlacesPage implements OnInit {
-
+  places: string[] = ['Brunei', 'Tutong', 'Belait', 'Temburong'];
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
