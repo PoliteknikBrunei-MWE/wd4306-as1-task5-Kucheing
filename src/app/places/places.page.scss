@@ -1,6 +1,14 @@
-.aligntextcenter{
+.white-text {
+    --color: white;
+  }
+
+  .aligntextcenter{
     text-align: center;
 }
+
+.white{
+    color: white;}
+
 
 .clickable-box {
     display: block;
