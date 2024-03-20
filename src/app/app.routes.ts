@@ -53,4 +53,20 @@ export const routes: Routes = [
     path: 'tabs',
     loadComponent: () => import('./tabs/tabs.page').then((m) => m.TabsPage),
   },
+  {
+    path: 'brunei',
+    loadComponent: () => import('./brunei/brunei.page').then( m => m.BruneiPage)
+  },
+  {
+    path: 'tutong',
+    loadComponent: () => import('./tutong/tutong.page').then( m => m.TutongPage)
+  },
+  {
+    path: 'temburong',
+    loadComponent: () => import('./temburong/temburong.page').then( m => m.TemburongPage)
+  },
+  {
+    path: 'belait',
+    loadComponent: () => import('./belait/belait.page').then( m => m.BelaitPage)
+  },
 ];
