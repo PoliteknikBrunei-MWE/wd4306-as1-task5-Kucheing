@@ -1,32 +1,38 @@
-<ion-menu contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
-</ion-menu>
+
 <div class="ion-page" id="main-content">
+
+  <!-- <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>Brunei Darussalam</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
+        <ion-back-button defaultHref="/places"></ion-back-button>
       </ion-buttons>
-      <ion-title>Find Places</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-header [translucent]="true">
-    <ion-toolbar>
-      <ion-title>Places</ion-title>
+      <ion-title>
+        Brunei Darussalam
+      </ion-title>
     </ion-toolbar>
   </ion-header>
   
   <ion-content [fullscreen]="true">
     <ion-card>
       <ion-card-content>
-        <ion-img src="/assets/img/temburong.jpeg" alt="Image"></ion-img>
+        <ion-img src="assets/img/brunei.jpeg" alt="Image"></ion-img>
       </ion-card-content>
     </ion-card>
   
     <ion-content class="ion-padding">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Brunei Darussalam</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Brunei is a country located in Southeast Asia on the island of Borneo. Aside from the South China Sea coastline, it is surrounded by Malaysia. The coastal position puts Brunei close to vital sea lanes linking the Indian and Pacific Oceans. Brunei is mostly flat with mountains in the east.        </ion-card-content>
+      </ion-card>
+
+      
