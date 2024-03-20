@@ -2,18 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-places',
-  templateUrl: './places.page.html',
-  styleUrls: ['./places.page.scss'],
+  selector: 'app-belait',
+  templateUrl: './belait.page.html',
+  styleUrls: ['./belait.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class PlacesPage implements OnInit {
+export class BelaitPage implements OnInit {
 
-  
-  ngOnInit() {}
-  
+  constructor() { }
+
+  ngOnInit() {
   }
+
+}
